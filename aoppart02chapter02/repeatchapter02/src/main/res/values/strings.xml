@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">repeatChapter02</string>
+    <string name="addButton">번호 추가하기</string>
+    <string name="clearButton">초기화</string>
+    <string name="runButton">자동 등록하기</string>
+</resources>

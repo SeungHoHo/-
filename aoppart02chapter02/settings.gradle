@@ -1,0 +1,3 @@
+include ':repeatchapter02'
+include ':app'
+rootProject.name = "aop-part02-chapter02"
