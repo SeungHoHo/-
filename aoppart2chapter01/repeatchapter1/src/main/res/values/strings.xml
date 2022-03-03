@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RepeatChapter1</string>
+    <string name="height">키(cm)</string>
+    <string name="weight">몸무게(kg)</string>
+</resources>
