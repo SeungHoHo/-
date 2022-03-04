@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BookListApp</string>
+    <string name="book_review_write">책 평가글 작성하기</string>
+    <string name="author_caption">저자 :</string>
+    <string name="price_caption">판매가격 :</string>
+    <string name="selling_caption">판매여부 :</string>
+    <string name="publish_caption">출판사 :</string>
+    <string name="save_review_close">리뷰 저장하고 나가기</string>
+    <string name="please_insert_keyword">검색어를 입력해주세요</string>
+</resources>

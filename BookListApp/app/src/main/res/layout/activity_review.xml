@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/book_review_write"
+        android:textColor="@color/coral"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_gray_stroke_radius_8"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <TextView
+        android:id="@+id/bookTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/coverImageView"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        tools:text="안드로이드 마스터하기" />
+
+    <TextView
+        android:id="@+id/authorCationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/author_caption"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/coverImageView"
+        app:layout_constraintTop_toBottomOf="@id/bookTitleTextView" />
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/authorCationTextView"
+        app:layout_constraintTop_toBottomOf="@id/bookTitleTextView"
+        tools:text="홍길동" />
+
+    <TextView
+        android:id="@+id/priceCationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/price_caption"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/coverImageView"
+        app:layout_constraintTop_toBottomOf="@id/authorTextView" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/priceCationTextView"
+        app:layout_constraintTop_toBottomOf="@id/authorTextView"
+        tools:text="26,000원" />
+
+    <TextView
+        android:id="@+id/sellingCationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/selling_caption"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/coverImageView"
+        app:layout_constraintTop_toBottomOf="@id/priceCationTextView" />
+
+    <TextView
+        android:id="@+id/sellingTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/sellingCationTextView"
+        app:layout_constraintTop_toBottomOf="@id/priceTextView"
+        tools:text="판매중" />
+
+    <EditText
+        android:id="@+id/reviewEditText"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="텍스트를 입력하세요"
+        app:layout_constraintTop_toBottomOf="@id/coverImageView" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/aqua_blue"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="저장하기" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
