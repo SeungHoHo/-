@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">part3chapter01</string>
+    <string name="result">결과</string>
+    <string name="firebase_token">Firebase 토큰</string>
+    <string name="loading">Loading...</string>
+</resources>
