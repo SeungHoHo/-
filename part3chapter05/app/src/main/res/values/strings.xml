@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">part3-chapter05</string>
+    <string name="facebook_app_id">641858860410106</string>
+    <string name="fb_login_protocol_scheme">fb508545357039451</string>
+    <string name="write_name">이름을 입력해주세요.</string>
+
+</resources>
